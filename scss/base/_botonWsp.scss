@@ -1,0 +1,31 @@
+.boton-wsp {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    box-sizing: border-box;
+    transition: ease 0.3s;
+    @include mobile{
+        left: auto;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+    .boton {
+        width: 60px;
+        @include tablet{
+            width: 40px;
+        }
+        @include mobile{
+            width: 40px;
+        }
+       
+        
+
+    }
+}
+
+
+
+

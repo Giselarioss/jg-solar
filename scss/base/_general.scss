@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+/*----anular div del host----*/
+.disclaimer{
+    display: none;
+}
+
+@font-face {
+    font-family:'Popi';
+    src: url('../font/poppins/Poppins-Bold.ttf');
+    
+
+}
+@font-face {
+    font-family:'Popir';
+    src: url('../font/poppins/Poppins-Regular.ttf');
+    
+}
+
+
+
+

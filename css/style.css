@@ -1,0 +1,149 @@
+/*---- Ajuste especial para img-qhacemos----*/
+.boton-wsp {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  box-sizing: border-box;
+  transition: ease 0.3s;
+}
+@media only screen and (max-width: 450px) {
+  .boton-wsp {
+    left: auto;
+  }
+}
+.boton-wsp:hover {
+  transform: scale(1.1);
+}
+.boton-wsp .boton {
+  width: 60px;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  .boton-wsp .boton {
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .boton-wsp .boton {
+    width: 40px;
+  }
+}
+
+/*--form--*/
+/*--form11---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----anular div del host----*/
+.disclaimer {
+  display: none;
+}
+
+@font-face {
+  font-family: "Popi";
+  src: url("../font/poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Popir";
+  src: url("../font/poppins/Poppins-Regular.ttf");
+}
+header {
+  height: 140px;
+  text-align: center;
+  background-color: white;
+  font-family: "popir";
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+header .info {
+  text-align: center;
+  background: rgb(241, 147, 70);
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: "popir";
+  letter-spacing: 1px;
+  border-bottom: 1px solid orange;
+}
+header .contenedor-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .contenedor-menu .nav-menu .nav-letter {
+  color: rgb(8, 84, 116);
+  font-family: "popir";
+  font-weight: bolder;
+  font-size: 1rem;
+  text-shadow: 1px 5px 5px 4px black;
+}
+header .contenedor-menu .nav-menu .nav-letter:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+#inicio {
+  scroll-margin: 140px;
+  height: 700px;
+  background-image: url(../imagenes/fondos-imagenes/fondo2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#inicio .contenedor-inicio {
+  font-weight: bolder;
+  font-family: "popi";
+  padding-top: 300px;
+  color: rgb(1, 26, 29);
+}
+#inicio .contenedor-inicio h1 {
+  text-align: center;
+  width: 80%;
+  padding: 5px;
+  font-size: 3rem;
+  background-color: rgba(245, 245, 245, 0.685);
+  border-radius: 15% 20%/50% 10%;
+}
+#inicio .contenedor-inicio p {
+  width: 90%;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: rgba(245, 245, 245, 0.685);
+  border-radius: 50% 30%/15% 20%;
+  padding: 5px 10px;
+}
+
+#nosotros {
+  scroll-margin: 170px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+#nosotros .contenedor-nosotros1 {
+  width: 50%;
+  height: 400px;
+}
+#nosotros .contenedor-nosotros1 h2 {
+  font-family: "popi";
+  color: rgb(8, 84, 116);
+  font-size: 2rem;
+}
+#nosotros .contenedor-nosotros1 p {
+  font-family: "popir";
+  line-height: 40px;
+}
+#nosotros .contenedor-nosotros2 {
+  width: 45%;
+  height: 400px;
+  text-align: center;
+  border-right: 5px solid orange;
+  border-bottom: 5px solid orange;
+}
+#nosotros .contenedor-nosotros2 img {
+  padding-top: 50px;
+  width: 60%;
+}
+
+/*# sourceMappingURL=style.css.map */

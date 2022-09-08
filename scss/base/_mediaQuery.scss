@@ -1,0 +1,28 @@
+@mixin tablet {
+    @media only screen and (min-width:451px) and (max-width:990px) {
+      @content; 
+    }    
+} 
+
+@mixin mobile {
+    @media only screen and (max-width: 450px){
+        @content;      
+    }
+    
+}
+@mixin desktop {
+    @media only screen and (min-width: 990px){
+        @content;
+    }
+}
+/*---- Ajuste especial para img-qhacemos----*/
+@mixin tablet2 {
+    @media only screen and (min-width:490px) and (max-width:760px) {
+      @content; 
+    }    
+} 
+@mixin mobile2{
+    @media only screen and (max-width:490px) {
+        @content;
+    }
+}
