@@ -12,13 +12,12 @@ header{
         background: nth($bg, 2);    
         font-size: 0.8rem;
         font-weight: bold;
-        font-family: 'popir';            
+        font-family: 'popi';            
         letter-spacing: 1px;
         border-bottom: 1px solid orange;
         
     }
-    .nav-mobile{
-       
+    .nav-mobile{       
         .contenedor-menu {
             display: flex;
             justify-content: center;

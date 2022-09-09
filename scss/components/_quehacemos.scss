@@ -1,54 +1,43 @@
 #quehacemos{
-    margin: 50px;
-    scroll-margin: 140px;    
+    background-image: url(../imagenes/fondos-imagenes/fondo1.jpg);
+    background-size: cover;
+    background-attachment: fixed;    
+    height: 700px;
+    padding: 50px;    
+    scroll-margin: 190px;    
     text-align: center;
-    h2{
-        width: 97%;
-        font-family: 'popi';
-        color: rgb(8, 84, 116);
-        font-size: 2rem;  
-        text-align: center;
-    }
-    p{
-        margin-top: 30px;
-        font-family: 'popir'; 
-        line-height: 40px;
-    }
-    .section3-qhacemos {
-        width: 100%; 
-        height: 300px;               
-        padding-top: 80px;
-        padding-bottom: 50px;
-        border-top: none;
-        @extend %border;  
-        @include tablet{
-            height: 450px;
+    color: white;
+    .quehacemos-box{
+        background-color: rgba(128, 128, 128, 0.555);
+        h2{
+            padding-top: 10px;
+            width: 97%;
+            font-family: 'popi';
+            color: orange;
+            font-size: 2rem;  
+            text-align: center;
         }
-        @include mobile{
-            height: 680px;
+        p{
+            margin-top: 30px;
+            font-family: 'popi'; 
+            line-height: 40px;
+            font-size: 1.2rem;
+        }   
+        
+        .quehacemos{        
+            margin-top: 70px;
+            text-align: left;
+            h5{
+                font-family: 'popi';
+                color: orange,
+            }
+            p{
+                font-family: 'popir';
+                color: white;
+                font-size: 1.1rem;
+                padding-bottom: 20px;
+            }
+            
         }
-          
-        a {    
-            text-decoration: none;
-            padding: 0 10px;
-            border-bottom: 2px solid nth($colors, 1);
-            border-radius: 5px;            
-            color: nth($colors, 7);
-            font-family: 'poppins';
-            font-size: 1.1rem;
-            background-color: nth($bg, 2);    
-        }
-                
-        .box-color{            
-            font-family: 'poppinsregular';
-            font-weight: bold ;
-            background-color: nth($bg, 1);              
-        }
-        .text-color {
-            text-align: start;
-            color: nth($colors, 2);
-            font-family: 'poppinsregular';
-            font-size: 1rem;
-        }        
     }
 }

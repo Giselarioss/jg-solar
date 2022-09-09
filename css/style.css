@@ -51,11 +51,6 @@
   font-family: "Popir";
   src: url("../font/poppins/Poppins-Regular.ttf");
 }
-#quehacemos .section3-qhacemos {
-  border: 2px black solid;
-  background-color: rgba(0, 0, 0, 0.877);
-}
-
 header {
   height: 141px;
   text-align: center;
@@ -70,7 +65,7 @@ header .info {
   background: rgb(241, 147, 70);
   font-size: 0.8rem;
   font-weight: bold;
-  font-family: "popir";
+  font-family: "popi";
   letter-spacing: 1px;
   border-bottom: 1px solid orange;
 }
@@ -144,68 +139,53 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   width: 45%;
   height: 400px;
   text-align: center;
-  border-right: 5px solid orange;
-  border-bottom: 5px solid orange;
 }
 #nosotros .contenedor-nosotros2 img {
-  padding-top: 50px;
-  width: 60%;
+  padding-top: 20px;
+  width: 80%;
+  height: 300px;
 }
 
 #quehacemos {
-  margin: 50px;
-  scroll-margin: 140px;
+  background-image: url(../imagenes/fondos-imagenes/fondo1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+  padding: 50px;
+  scroll-margin: 190px;
   text-align: center;
+  color: white;
 }
-#quehacemos h2 {
+#quehacemos .quehacemos-box {
+  background-color: rgba(128, 128, 128, 0.555);
+}
+#quehacemos .quehacemos-box h2 {
+  padding-top: 10px;
   width: 97%;
   font-family: "popi";
-  color: rgb(8, 84, 116);
+  color: orange;
   font-size: 2rem;
   text-align: center;
 }
-#quehacemos p {
+#quehacemos .quehacemos-box p {
   margin-top: 30px;
-  font-family: "popir";
+  font-family: "popi";
   line-height: 40px;
+  font-size: 1.2rem;
 }
-#quehacemos .section3-qhacemos {
-  width: 100%;
-  height: 300px;
-  padding-top: 80px;
-  padding-bottom: 50px;
-  border-top: none;
+#quehacemos .quehacemos-box .quehacemos {
+  margin-top: 70px;
+  text-align: left;
 }
-@media only screen and (min-width: 451px) and (max-width: 990px) {
-  #quehacemos .section3-qhacemos {
-    height: 450px;
-  }
+#quehacemos .quehacemos-box .quehacemos h5 {
+  font-family: "popi";
+  color: orange;
 }
-@media only screen and (max-width: 450px) {
-  #quehacemos .section3-qhacemos {
-    height: 680px;
-  }
-}
-#quehacemos .section3-qhacemos a {
-  text-decoration: none;
-  padding: 0 10px;
-  border-bottom: 2px solid orange;
-  border-radius: 5px;
-  color: grey;
-  font-family: "poppins";
+#quehacemos .quehacemos-box .quehacemos p {
+  font-family: "popir";
+  color: white;
   font-size: 1.1rem;
-  background-color: rgb(241, 147, 70);
-}
-#quehacemos .section3-qhacemos .box-color {
-  font-family: "poppinsregular";
-  font-weight: bold;
-  background-color: #23222d;
-}
-#quehacemos .section3-qhacemos .text-color {
-  text-align: start;
-  color: whitesmoke;
-  font-family: "poppinsregular";
-  font-size: 1rem;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
