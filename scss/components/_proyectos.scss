@@ -1,8 +1,8 @@
 #proyectos{
-    height: 1000px;
+    height: 1100px;
     scroll-margin: 140px;
     padding: 20px;
-    background-color: rgba(128, 128, 128, 0.274);
+    background-color: rgba(128, 128, 128, 0.123);
     padding-bottom: 40px;
     h2{
        color: rgb(8, 84, 116);
@@ -22,6 +22,7 @@
             font-family: 'popir';
             font-size: 1.1;
             line-height: 40px;
+            
         }
     }
     .proyecto-comunicate{
@@ -34,14 +35,27 @@
             color: rgb(8, 84, 116);
             
         }
-        .proyecto-box{
+        .proyecto-box{ 
+            align-items: center;           
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            text-align: center;
-            div{
-                width: 30%;
-                height: 150px;
+            justify-content: space-around;
+
+            .numeracion{
+                display: flex;                
+                justify-content: start; 
+                align-items: center;
+                img{
+                    padding-right: 30px;
+                }
+                p{
+                    font-family: 'popir';
+                    font-size: 0.9em;
+                }
+                
+            }
+            .proyecto-1{            
+                width: 100%;
+                
             }
         }
     }

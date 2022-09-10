@@ -196,10 +196,10 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
 }
 
 #proyectos {
-  height: 1000px;
+  height: 1100px;
   scroll-margin: 140px;
   padding: 20px;
-  background-color: rgba(128, 128, 128, 0.274);
+  background-color: rgba(128, 128, 128, 0.123);
   padding-bottom: 40px;
 }
 #proyectos h2 {
@@ -232,14 +232,24 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   color: rgb(8, 84, 116);
 }
 #proyectos .proyecto-comunicate .proyecto-box {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: space-around;
 }
-#proyectos .proyecto-comunicate .proyecto-box div {
-  width: 30%;
-  height: 150px;
+#proyectos .proyecto-comunicate .proyecto-box .numeracion {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#proyectos .proyecto-comunicate .proyecto-box .numeracion img {
+  padding-right: 30px;
+}
+#proyectos .proyecto-comunicate .proyecto-box .numeracion p {
+  font-family: "popir";
+  font-size: 0.9em;
+}
+#proyectos .proyecto-comunicate .proyecto-box .proyecto-1 {
+  width: 100%;
 }
 
 #contacto {
