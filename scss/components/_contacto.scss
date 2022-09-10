@@ -1,0 +1,125 @@
+#contacto{   
+    scroll-margin: 140px;      
+    @include flex (flex, center, space-between);        
+    flex-direction: column;                
+    @include tablet{
+        margin-top: 100px;
+    }
+    @include mobile{
+        margin-top: 130px;
+    }
+    .login-box { 
+        width: 80%;  
+        height: 500px;         
+        padding: 40px;    
+        margin-top: 4px;                            
+        background: nth($bg, 4);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px nth($bg, 4);
+        border-radius: 10px;  
+        border: 1px solid nth($colors, 1);          
+          
+
+        form a {
+            position: relative;                
+            padding: 10px 15px;
+            color: nth($colors, 11);
+            font-size: 1.1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: .5s;
+            margin-top: 40px;
+            letter-spacing: 4px;
+
+            &:hover {
+                background: nth($colors, 11);
+                color: nth($colors, 10);
+                border-radius: 5px;
+                box-shadow: 0 0 5px nth($colors, 11),
+                            0 0 25px nth($colors, 11),
+                            0 0 50px nth($colors, 11),
+                            0 0 100px nth($colors, 11);
+            }
+        }
+            
+        h2{
+            margin: 0 0 30px;
+            padding: 0;
+            font-family: 'popir';
+            font-size: 2rem;    
+            color: nth($colors, 1);
+            letter-spacing: 10px;
+            text-align: center;
+            @include tablet{
+                font-size: 1.5rem;
+            } 
+            @include mobile{
+                font-size: 1.3rem;
+                letter-spacing: 2px;
+            }
+        }
+        .user-box {
+            position: relative;
+        }
+        input {
+            width: 100%;
+            @extend %form;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid nth($colors, 2);
+            outline: none;
+            background: transparent;
+        }
+        label {
+            position: absolute;
+            top:0;
+            left: 0;
+            @extend %form;
+            pointer-events: none;
+            transition: .5s;
+        }
+        input:focus~label,
+        input:valid~label {
+            top: -20px;
+            left: 0;
+            color: nth($colors, 11);
+            font-size: 12px;
+           
+        }
+        .boton {
+            background-color: nth($colors, 11);
+            font-family: 'popi';
+            padding: 5px;
+            border: solid 1px nth($colors, 11);
+            border-radius: 10px;
+            color: nth($colors, 6);
+        
+        }
+
+    }                
+    
+    .redes2 {            
+        @include flex (flex, center, center);
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 80px;
+        @include tablet{
+            margin-top: 50px;
+        }
+        @include mobile{
+            margin-top: 80px;
+            margin-bottom: 100px;
+        }
+       
+        img {
+            margin-top: 10px;
+            width: 20%;
+            @include mobile{
+                width: 50%;
+            }
+
+        }
+    } 
+
+}

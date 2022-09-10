@@ -1,12 +1,14 @@
 #nosotros{
-    scroll-margin: 170px;
-    padding: 50px;
+    scroll-margin: 150px;
+    height: 550px;    
+    padding-top: 10px;
     display: flex;
     align-items: center;
        
     .contenedor-nosotros1{    
         width: 50%;
         height: 400px;
+        padding-left: 20px;
         h2{
             font-family: 'popi';
             color: rgb(8, 84, 116);
@@ -14,18 +16,17 @@
         }
         p{
            font-family: 'popir'; 
-           line-height: 40px;
+           line-height: 50px;
         }  
 
     }
     .contenedor-nosotros2{
-        width: 45%;
-        height: 400px;        
+        width: 45%;              
         text-align: center;
         
         img{
-            padding-top: 20px;
-            width: 80%;
+            padding-top: 10px;
+            width: 90%;
             height: 300px;
         }
     }  

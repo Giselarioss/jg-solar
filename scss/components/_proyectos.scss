@@ -1,0 +1,49 @@
+#proyectos{
+    height: 1000px;
+    scroll-margin: 140px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.274);
+    padding-bottom: 40px;
+    h2{
+       color: rgb(8, 84, 116);
+       font-family: 'popi';
+       font-size: 1.6rem;
+       margin: 30px 30px;
+    }
+    .proyectos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .proyecto-1{            
+            width: 30%;
+        }
+        .proyecto-2{
+            width: 50%;
+            font-family: 'popir';
+            font-size: 1.1;
+            line-height: 40px;
+        }
+    }
+    .proyecto-comunicate{
+        margin: 40px;
+        
+        h5{
+            margin-top: 30px;
+            padding: 30px;
+            font-family: 'popi';
+            color: rgb(8, 84, 116);
+            
+        }
+        .proyecto-box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            div{
+                width: 30%;
+                height: 150px;
+            }
+        }
+    }
+
+}

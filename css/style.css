@@ -51,6 +51,12 @@
   font-family: "Popir";
   src: url("../font/poppins/Poppins-Regular.ttf");
 }
+#contacto .login-box label, #contacto .login-box input {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
 header {
   height: 141px;
   text-align: center;
@@ -117,14 +123,16 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
 }
 
 #nosotros {
-  scroll-margin: 170px;
-  padding: 50px;
+  scroll-margin: 150px;
+  height: 550px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
 }
 #nosotros .contenedor-nosotros1 {
   width: 50%;
   height: 400px;
+  padding-left: 20px;
 }
 #nosotros .contenedor-nosotros1 h2 {
   font-family: "popi";
@@ -133,16 +141,15 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
 }
 #nosotros .contenedor-nosotros1 p {
   font-family: "popir";
-  line-height: 40px;
+  line-height: 50px;
 }
 #nosotros .contenedor-nosotros2 {
   width: 45%;
-  height: 400px;
   text-align: center;
 }
 #nosotros .contenedor-nosotros2 img {
-  padding-top: 20px;
-  width: 80%;
+  padding-top: 10px;
+  width: 90%;
   height: 300px;
 }
 
@@ -152,7 +159,7 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   background-attachment: fixed;
   height: 700px;
   padding: 50px;
-  scroll-margin: 190px;
+  scroll-margin: 140px;
   text-align: center;
   color: white;
 }
@@ -186,6 +193,285 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   color: white;
   font-size: 1.1rem;
   padding-bottom: 20px;
+}
+
+#proyectos {
+  height: 1000px;
+  scroll-margin: 140px;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.274);
+  padding-bottom: 40px;
+}
+#proyectos h2 {
+  color: rgb(8, 84, 116);
+  font-family: "popi";
+  font-size: 1.6rem;
+  margin: 30px 30px;
+}
+#proyectos .proyectos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#proyectos .proyectos .proyecto-1 {
+  width: 30%;
+}
+#proyectos .proyectos .proyecto-2 {
+  width: 50%;
+  font-family: "popir";
+  font-size: 1.1;
+  line-height: 40px;
+}
+#proyectos .proyecto-comunicate {
+  margin: 40px;
+}
+#proyectos .proyecto-comunicate h5 {
+  margin-top: 30px;
+  padding: 30px;
+  font-family: "popi";
+  color: rgb(8, 84, 116);
+}
+#proyectos .proyecto-comunicate .proyecto-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+#proyectos .proyecto-comunicate .proyecto-box div {
+  width: 30%;
+  height: 150px;
+}
+
+#contacto {
+  scroll-margin: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #contacto {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #contacto {
+    margin-top: 130px;
+  }
+}
+#contacto .login-box {
+  width: 80%;
+  height: 500px;
+  padding: 40px;
+  margin-top: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 1px solid orange;
+}
+#contacto .login-box form a {
+  position: relative;
+  padding: 10px 15px;
+  color: #e9ad5f;
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+#contacto .login-box form a:hover {
+  background: #e9ad5f;
+  color: rgb(197, 197, 197);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #e9ad5f, 0 0 25px #e9ad5f, 0 0 50px #e9ad5f, 0 0 100px #e9ad5f;
+}
+#contacto .login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-family: "popir";
+  font-size: 2rem;
+  color: orange;
+  letter-spacing: 10px;
+  text-align: center;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #contacto .login-box h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #contacto .login-box h2 {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+}
+#contacto .login-box .user-box {
+  position: relative;
+}
+#contacto .login-box input {
+  width: 100%;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  outline: none;
+  background: transparent;
+}
+#contacto .login-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+#contacto .login-box input:focus ~ label,
+#contacto .login-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #e9ad5f;
+  font-size: 12px;
+}
+#contacto .login-box .boton {
+  background-color: #e9ad5f;
+  font-family: "popi";
+  padding: 5px;
+  border: solid 1px #e9ad5f;
+  border-radius: 10px;
+  color: white;
+}
+#contacto .redes2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #contacto .redes2 {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #contacto .redes2 {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+}
+#contacto .redes2 img {
+  margin-top: 10px;
+  width: 20%;
+}
+@media only screen and (max-width: 450px) {
+  #contacto .redes2 img {
+    width: 50%;
+  }
+}
+
+.grid-footer {
+  background: black;
+  z-index: 2;
+}
+.grid-footer .footer-padre {
+  display: flex;
+}
+.grid-footer .footer-padre .logo-footer {
+  width: 10%;
+}
+.grid-footer .footer-padre .logo-footer img {
+  width: 70%;
+  margin-top: 20px;
+  padding: 5px;
+  border: solid 2px black;
+  border-radius: 100px;
+}
+@media only screen and (max-width: 450px) {
+  .grid-footer .footer-padre .logo-footer img {
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  .grid-footer .footer-padre .logo-footer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .grid-footer .footer-padre .logo-footer {
+    display: none;
+  }
+}
+.grid-footer .footer-padre .footer-div2 {
+  margin: 10px 1px 10px 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  font-family: "popir";
+  font-size: 1rem;
+  color: white;
+}
+@media only screen and (max-width: 450px) {
+  .grid-footer .footer-padre .footer-div2 {
+    margin-left: 5px;
+    padding-right: 20px;
+  }
+}
+.grid-footer .footer-padre .footer-div2 .redes-footer {
+  display: flex;
+}
+.grid-footer .footer-padre .footer-div2 .redes-footer .imagenes-redes {
+  margin-top: 20px;
+  margin-right: 30px;
+  border-radius: 100%;
+  border: solid 1px grey;
+}
+.grid-footer .footer-padre .contacto-p {
+  padding-top: 20px;
+  font-family: "popir";
+  font-size: 1rem;
+  color: white;
+}
+.grid-footer .footer-padre .contacto-p a {
+  text-decoration: none;
+  color: orange;
+}
+.grid-footer .footer2 {
+  height: 65px;
+  width: 100%;
+  background: #191919;
+  padding-top: 25px;
+  color: #777;
+  font-size: 12px;
+}
+.grid-footer .footer2 a {
+  text-decoration: none;
+  color: rgb(197, 197, 197);
+}
+.grid-footer .footer2 a:hover {
+  color: rgb(247, 116, 28);
+}
+@media only screen and (max-width: 450px) {
+  .grid-footer .footer2 {
+    height: 95px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  .grid-footer .footer2 {
+    height: 96px;
+  }
+}
+.grid-footer .footer2 .copy {
+  margin-left: 300px;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  .grid-footer .footer2 .copy {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .grid-footer .footer2 .copy {
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
