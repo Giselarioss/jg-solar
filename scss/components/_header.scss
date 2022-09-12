@@ -16,26 +16,29 @@ header{
         letter-spacing: 1px;
         border-bottom: 1px solid orange;
         
-    }
-    .nav-mobile{       
-        .contenedor-menu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .nav-menu .nav-letter{
-                color: rgb(8, 84, 116);
-                font-family: 'popir';
-                font-weight: bolder;
-                font-size: 1rem;
-                text-shadow: 1px 5px 5px 4px black;
-                &:hover{        
-                    transform: scale(1.1);
-                    color: black;
-                }
+    }         
+    .contenedor-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .nav-menu .nav-letter {
+            color: rgb(8, 84, 116);
+            font-family: 'popir';
+            font-weight: bolder;
+            font-size: 1rem;
+            text-shadow: 1px 5px 5px 4px black;    
+            &:hover {
+                transform: scale(1.1);
+                color: black;
             }
-        }    
+        }
+        @include mobile{
 
+        }
     }
+    
+    
 }
     
         

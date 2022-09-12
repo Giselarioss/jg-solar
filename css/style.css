@@ -1,4 +1,3 @@
-/*---- Ajuste especial para img-qhacemos----*/
 .boton-wsp {
   position: fixed;
   z-index: 999;
@@ -8,7 +7,7 @@
   box-sizing: border-box;
   transition: ease 0.3s;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .boton-wsp {
     left: auto;
   }
@@ -19,12 +18,12 @@
 .boton-wsp .boton {
   width: 60px;
 }
-@media only screen and (min-width: 451px) and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
   .boton-wsp .boton {
     width: 40px;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .boton-wsp .boton {
     width: 40px;
   }
@@ -75,23 +74,22 @@ header .info {
   letter-spacing: 1px;
   border-bottom: 1px solid orange;
 }
-header .nav-mobile .contenedor-menu {
+header .contenedor-menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .nav-mobile .contenedor-menu .nav-menu .nav-letter {
+header .contenedor-menu .nav-menu .nav-letter {
   color: rgb(8, 84, 116);
   font-family: "popir";
   font-weight: bolder;
   font-size: 1rem;
   text-shadow: 1px 5px 5px 4px black;
 }
-header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
+header .contenedor-menu .nav-menu .nav-letter:hover {
   transform: scale(1.1);
   color: black;
 }
-
 #inicio {
   scroll-margin: 140px;
   height: 700px;
@@ -149,7 +147,7 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
 }
 #nosotros .contenedor-nosotros2 img {
   padding-top: 10px;
-  width: 90%;
+  width: 80%;
   height: 300px;
 }
 
@@ -265,18 +263,19 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   margin-top: 30px;
   margin-bottom: 0;
   padding-top: 30px;
+  padding-left: 50px;
   font-family: "popi";
   font-size: 2rem;
-  color: white;
-  text-align: center;
+  color: orange;
+  text-align: left;
   background: rgba(0, 0, 0, 0.5);
 }
-@media only screen and (min-width: 451px) and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
   #contacto .contactanos {
     font-size: 1.5rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   #contacto .contactanos {
     font-size: 1.3rem;
     letter-spacing: 2px;
@@ -323,15 +322,31 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   color: orange;
   font-size: 0.8rem;
 }
+#contacto .contacto .login-box .textarea {
+  height: 90px;
+  font-family: "popir";
+  color: black;
+  font-size: 0.8rem;
+}
 #contacto .contacto .login-box .boton {
   background-color: orange;
   font-family: "popi";
-  padding: 5px 30px;
+  padding: 5px 270px;
   border: solid 1px #e9ad5f;
   border-radius: 10px;
   color: white;
 }
+#contacto .contacto .login-box .boton:hover {
+  transform: scale(1.1);
+  color: white;
+}
 #contacto .contacto .redes2 {
+  background: rgba(155, 155, 155, 0.199);
+  box-shadow: 0 8px 32px 0 rgba(116, 115, 114, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(11px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   flex-direction: column;
 }
@@ -343,16 +358,21 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   font-family: "popi";
   font-size: 0.8rem;
   margin: 20px;
-  border: 1px solid rgb(36, 35, 35);
-  background-color: black;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(137, 137, 139, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 5px 80px 5px 10px;
   border-radius: 10px;
 }
+#contacto .contacto .redes2 .sociales:hover {
+  transform: scale(1.1);
+  color: white;
+}
 #contacto .contacto .redes2 .sociales img {
   margin-right: 40px;
-}
-#contacto .contacto .redes2 .sociales img:hover {
-  transform: scale(1, 1);
 }
 
 .grid-footer {
@@ -371,17 +391,17 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   margin-top: 5px;
   padding: 5px;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .grid-footer .footer-padre .logo-footer img {
     visibility: hidden;
   }
 }
-@media only screen and (min-width: 451px) and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
   .grid-footer .footer-padre .logo-footer {
     display: none;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .grid-footer .footer-padre .logo-footer {
     display: none;
   }
@@ -394,7 +414,7 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   font-size: 0.7rem;
   color: black;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .grid-footer .footer-padre .footer-div2 {
     margin-left: 5px;
     padding-right: 20px;
@@ -433,12 +453,12 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
 .grid-footer .footer2 a:hover {
   color: rgb(247, 116, 28);
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .grid-footer .footer2 {
     height: 95px;
   }
 }
-@media only screen and (min-width: 451px) and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
   .grid-footer .footer2 {
     height: 96px;
   }
@@ -446,12 +466,12 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
 .grid-footer .footer2 .copy {
   margin-left: 300px;
 }
-@media only screen and (min-width: 451px) and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
   .grid-footer .footer2 .copy {
     margin-left: 0;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .grid-footer .footer2 .copy {
     margin-left: 0;
   }
