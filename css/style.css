@@ -7,7 +7,7 @@
   box-sizing: border-box;
   transition: ease 0.3s;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .boton-wsp {
     left: auto;
   }
@@ -18,12 +18,12 @@
 .boton-wsp .boton {
   width: 60px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 451px) and (max-width: 990px) {
   .boton-wsp .boton {
     width: 40px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .boton-wsp .boton {
     width: 40px;
   }
@@ -79,6 +79,13 @@ header .contenedor-menu {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 450px) {
+  header .contenedor-menu {
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+  }
+}
 header .contenedor-menu .nav-menu .nav-letter {
   color: rgb(8, 84, 116);
   font-family: "popir";
@@ -90,6 +97,12 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   transform: scale(1.1);
   color: black;
 }
+@media only screen and (max-width: 450px) {
+  header .logo {
+    width: 40%;
+  }
+}
+
 #inicio {
   scroll-margin: 140px;
   height: 700px;
@@ -270,12 +283,12 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   text-align: left;
   background: rgba(0, 0, 0, 0.5);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 451px) and (max-width: 990px) {
   #contacto .contactanos {
     font-size: 1.5rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   #contacto .contactanos {
     font-size: 1.3rem;
     letter-spacing: 2px;
@@ -391,17 +404,17 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   margin-top: 5px;
   padding: 5px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .grid-footer .footer-padre .logo-footer img {
     visibility: hidden;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 451px) and (max-width: 990px) {
   .grid-footer .footer-padre .logo-footer {
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .grid-footer .footer-padre .logo-footer {
     display: none;
   }
@@ -414,7 +427,7 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   font-size: 0.7rem;
   color: black;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .grid-footer .footer-padre .footer-div2 {
     margin-left: 5px;
     padding-right: 20px;
@@ -453,12 +466,12 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 .grid-footer .footer2 a:hover {
   color: rgb(247, 116, 28);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .grid-footer .footer2 {
     height: 95px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 451px) and (max-width: 990px) {
   .grid-footer .footer2 {
     height: 96px;
   }
@@ -466,12 +479,12 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 .grid-footer .footer2 .copy {
   margin-left: 300px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 451px) and (max-width: 990px) {
   .grid-footer .footer2 .copy {
     margin-left: 0;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .grid-footer .footer2 .copy {
     margin-left: 0;
   }
