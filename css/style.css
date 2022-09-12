@@ -51,7 +51,7 @@
   font-family: "Popir";
   src: url("../font/poppins/Poppins-Regular.ttf");
 }
-#contacto .login-box label, #contacto .login-box input {
+#contacto .contacto .login-box label, #contacto .contacto .login-box input {
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
@@ -252,62 +252,56 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   width: 100%;
 }
 
-.contactanos {
-  margin: 0 0 30px;
-  padding: 0;
+#contacto {
+  scroll-margin: 140px;
+  height: 600px;
+  padding: 30px;
+  background-image: url(../imagenes/fondos-imagenes/paneles3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contacto .contactanos {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-top: 30px;
   font-family: "popi";
   font-size: 2rem;
-  color: rgb(8, 84, 116);
+  color: white;
   text-align: center;
+  background: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 451px) and (max-width: 990px) {
-  .contactanos {
+  #contacto .contactanos {
     font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 450px) {
-  .contactanos {
+  #contacto .contactanos {
     font-size: 1.3rem;
     letter-spacing: 2px;
   }
 }
-
-#contacto {
-  width: 80%;
-  height: 500px;
-  scroll-margin: 140px;
+#contacto .contacto {
   display: flex;
-  border: 1px solid orange;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 100px;
+  font-family: "popi";
+  letter-spacing: 1px;
 }
-#contacto .login-box {
+#contacto .contacto .login-box {
   width: 60%;
   padding: 40px;
   margin-top: 4px;
   margin-right: 50px;
-  background: rgba(0, 0, 0, 0.5);
 }
-#contacto .login-box form a {
-  color: black;
-  font-size: 1.1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 0.5s;
-  margin-top: 40px;
-  letter-spacing: 4px;
-}
-#contacto .login-box form a:hover {
-  background: #e9ad5f;
-  color: black;
-}
-#contacto .login-box .user-box {
+#contacto .contacto .login-box .user-box {
   position: relative;
 }
-#contacto .login-box input {
+#contacto .contacto .login-box input {
   width: 100%;
   margin-bottom: 30px;
   border: none;
@@ -315,33 +309,33 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   outline: none;
   background: transparent;
 }
-#contacto .login-box label {
+#contacto .contacto .login-box label {
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
   transition: 0.5s;
 }
-#contacto .login-box input:focus ~ label,
-#contacto .login-box input:valid ~ label {
+#contacto .contacto .login-box input:focus ~ label,
+#contacto .contacto .login-box input:valid ~ label {
   top: -20px;
   left: 0;
   color: orange;
   font-size: 0.8rem;
 }
-#contacto .login-box .boton {
+#contacto .contacto .login-box .boton {
   background-color: orange;
-  font-family: "popir";
+  font-family: "popi";
   padding: 5px 30px;
   border: solid 1px #e9ad5f;
   border-radius: 10px;
   color: white;
 }
-#contacto .redes2 {
+#contacto .contacto .redes2 {
   display: flex;
   flex-direction: column;
 }
-#contacto .redes2 .sociales {
+#contacto .contacto .redes2 .sociales {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -349,31 +343,33 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   font-family: "popi";
   font-size: 0.8rem;
   margin: 20px;
-  border: 1px solid orange;
-  background-color: rgba(252, 168, 14, 0.884);
+  border: 1px solid rgb(36, 35, 35);
+  background-color: black;
   padding: 5px 80px 5px 10px;
   border-radius: 10px;
 }
-#contacto .redes2 .sociales img {
+#contacto .contacto .redes2 .sociales img {
   margin-right: 40px;
+}
+#contacto .contacto .redes2 .sociales img:hover {
+  transform: scale(1, 1);
 }
 
 .grid-footer {
-  background: black;
+  background: #ffffff;
   z-index: 2;
 }
 .grid-footer .footer-padre {
+  height: 130px;
   display: flex;
 }
 .grid-footer .footer-padre .logo-footer {
-  width: 10%;
+  width: 190px;
 }
 .grid-footer .footer-padre .logo-footer img {
   width: 70%;
-  margin-top: 20px;
+  margin-top: 5px;
   padding: 5px;
-  border: solid 2px black;
-  border-radius: 100px;
 }
 @media only screen and (max-width: 450px) {
   .grid-footer .footer-padre .logo-footer img {
@@ -394,9 +390,9 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   margin: 10px 1px 10px 50px;
   padding-right: 50px;
   padding-top: 10px;
-  font-family: "popir";
-  font-size: 1rem;
-  color: white;
+  font-family: "popi";
+  font-size: 0.7rem;
+  color: black;
 }
 @media only screen and (max-width: 450px) {
   .grid-footer .footer-padre .footer-div2 {
@@ -409,24 +405,24 @@ header .nav-mobile .contenedor-menu .nav-menu .nav-letter:hover {
   align-items: center;
 }
 .grid-footer .footer-padre .footer-div2 .redes-footer .imagenes-redes {
-  margin-top: 20px;
   margin-right: 30px;
 }
 .grid-footer .footer-padre .contacto-p {
   padding-top: 20px;
-  font-family: "popir";
-  font-size: 1rem;
-  color: white;
+  font-family: "popi";
+  font-size: 0.7rem;
+  color: black;
 }
 .grid-footer .footer-padre .contacto-p a {
   text-decoration: none;
-  color: orange;
+  color: rgb(8, 84, 116);
 }
 .grid-footer .footer2 {
-  height: 65px;
+  align-items: center;
+  height: 44px;
   width: 100%;
   background: #191919;
-  padding-top: 25px;
+  padding-top: 10px;
   color: #777;
   font-size: 12px;
 }

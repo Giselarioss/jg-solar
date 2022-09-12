@@ -1,20 +1,15 @@
 .grid-footer {
-    background: nth($colors, 3);    
-    
-    z-index: 2;
-
+    background: #ffffff;   
+    z-index: 2;    
     .footer-padre {
+        height: 130px;
         display: flex;
-
         .logo-footer {
-            width: 10%;
+            width: 190px;            
             img {
                 width: 70%;
-                margin-top: 20px;
+                margin-top: 5px;
                 padding: 5px;
-                border: solid 2px nth($colors, 3);
-                border-radius: 100px;
-
                 @include mobile {
                     visibility: hidden;
                 }
@@ -33,9 +28,9 @@
             margin: 10px 1px 10px 50px;
             padding-right: 50px;
             padding-top: 10px;
-            font-family: 'popir';
-            font-size: 1rem;            
-            color: nth($colors, 6);
+            font-family: 'popi';
+            font-size: 0.7rem;            
+            color: black;
             @include mobile {
                 margin-left: 5px;
                 padding-right: 20px;
@@ -45,8 +40,7 @@
                 display: flex;
                 align-items: center;
     
-                .imagenes-redes {
-                    margin-top: 20px;
+                .imagenes-redes {                    
                     margin-right: 30px;                  
                     
                 }
@@ -54,21 +48,22 @@
         }
         .contacto-p{                       
             padding-top: 20px;            
-            font-family: 'popir';
-            font-size: 1rem;
-            color: nth($colors, 6);
+            font-family: 'popi';
+            font-size: 0.7rem;
+            color: black;
             a{
                 text-decoration: none;
-                color: nth($colors, 1);
+                color: rgb(8, 84, 116);
             }       
         } 
         
     }
     .footer2 {
-        height: 65px;
+        align-items: center;
+        height: 44px;
         width: 100%;
         background: #191919;
-        padding-top: 25px;
+        padding-top: 10px;        
         color: #777;
         font-size: 12px;
         a {
