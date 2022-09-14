@@ -151,13 +151,17 @@
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
                 padding: 5px 80px 5px 10px;
                 border-radius: 10px;  
-                @include tablet{                    
-                    width: 50%;
+                @include tablet{  
+                    background: rgba( 0, 0, 0, 0.8 );
+                    text-align: center;                  
+                    width: auto;
                     margin: 20px auto;
+                    padding: 5px auto;
                 }       
                 @include mobile{
-                    width: 50%;
+                    width: auto;
                     margin: 20px auto;
+                    padding: auto;
                 }
                 &:hover{
                     transform: scale(1.1);

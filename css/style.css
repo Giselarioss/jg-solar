@@ -450,6 +450,7 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 @media only screen and (min-width: 451px) and (max-width: 990px) {
   #proyectos .proyecto-comunicate {
     width: 100%;
+    margin: 5px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -702,14 +703,18 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 }
 @media only screen and (min-width: 451px) and (max-width: 990px) {
   #contacto .contacto .redes2 .sociales {
-    width: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: auto;
     margin: 20px auto;
+    padding: 5px auto;
   }
 }
 @media only screen and (max-width: 450px) {
   #contacto .contacto .redes2 .sociales {
-    width: 50%;
+    width: auto;
     margin: 20px auto;
+    padding: auto;
   }
 }
 #contacto .contacto .redes2 .sociales:hover {
