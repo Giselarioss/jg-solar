@@ -1,12 +1,20 @@
 #quehacemos{
     background-image: url(../imagenes/fondos-imagenes/fondo1.jpg);
     background-size: cover;
-    background-attachment: fixed;    
+    background-attachment: fixed;  
+    max-width: 100%;   
     height: 700px;
     padding: 50px;    
     scroll-margin: 140px;    
     text-align: center;
     color: white;
+    @include tablet{
+        height: auto; 
+                       
+    }   
+    @include mobile{
+        height: auto;               
+    }                   
     .quehacemos-box{
         background-color: rgba(128, 128, 128, 0.555);
         h2{
@@ -16,6 +24,15 @@
             color: orange;
             font-size: 2rem;  
             text-align: center;
+            @include tablet{
+                width: 100%;
+                padding: 5px 10px;
+                font-size: 1.8rem;              
+            }   
+            @include mobile{
+                width: 100%;  
+                font-size: 1.7;             
+            }                
         }
         p{
             margin-top: 30px;
@@ -27,6 +44,10 @@
         .quehacemos{        
             margin-top: 70px;
             text-align: left;
+            
+            @include mobile{
+                text-align: center;               
+            }                
             h5{
                 font-family: 'popi';
                 color: orange,
@@ -36,6 +57,10 @@
                 color: white;
                 font-size: 1.1rem;
                 padding-bottom: 20px;
+               
+                @include mobile{
+                                 
+                }                
             }
             
         }

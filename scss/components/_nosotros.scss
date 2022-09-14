@@ -1,32 +1,86 @@
 #nosotros{
+    max-width: 100%;
     scroll-margin: 150px;
     height: 550px;    
     padding-top: 10px;
     display: flex;
-    align-items: center;       
+    align-items: center; 
+    overflow: hidden;
+    @include mobile{
+        display: inline;
+        height: auto;        
+    }  
+    @include tablet{
+        display: inline;
+        height: auto;
+        margin-bottom: 50px;      
+    }    
+    
     .contenedor-nosotros1{    
         width: 50%;
         height: 400px;
         padding-left: 20px;
-        h2{
+        @include tablet{
+            width: 100%;
+            padding:25px;              
+        }   
+        @include mobile{
+            width: 100%;
+            padding: 15px;                
+        }              
+        h2{           
             font-family: 'popi';
             color: rgb(8, 84, 116);
-            font-size: 2rem;            
+            font-size: 2rem;
+            @include tablet{
+                width: 100%;
+                padding-top: 25px;              
+            }   
+            @include mobile{
+                width: 100%;
+                padding-top: 25px;                
+            }                                  
         }
         p{
             font-family: 'popir'; 
             line-height: 50px;
+            @include mobile{
+                line-height:30px;
+                margin-bottom: 30px;                
+
+            }
+            @include tablet {
+                line-height:40px;
+
+            }
         }  
 
     }
     .contenedor-nosotros2{
         width: 45%;              
         text-align: center;
+        @include tablet{
+            width: 100%;                           
+        }   
+        @include mobile{
+            width: 100%;                           
+        }              
         
         img{
             padding-top: 10px;
             width: 80%;
             height: 300px;
+            @include tablet{
+                width: 80%;
+                height: auto;  
+                padding-bottom: 60px;             
+            }   
+            @include mobile{
+                width: 80%;
+                height: auto; 
+                padding-bottom: 60px; 
+                padding-top: 70px;               
+            }              
         }
     }  
     

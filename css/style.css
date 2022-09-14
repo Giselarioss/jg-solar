@@ -57,6 +57,7 @@
 }
 
 header {
+  max-width: 100%;
   height: 141px;
   text-align: center;
   background-color: white;
@@ -104,11 +105,24 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 }
 
 #inicio {
+  max-width: 100%;
   scroll-margin: 140px;
   height: 700px;
   background-image: url(../imagenes/fondos-imagenes/fondo2.jpg);
   background-size: cover;
   background-attachment: fixed;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #inicio {
+    background-image: url(../imagenes/fondos-imagenes/fondo-tablet.jpg);
+    background-size: 990px 700px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #inicio {
+    background-image: url(../imagenes/fondos-imagenes/fondo-mobile.jpg);
+    background-size: 700px 700px;
+  }
 }
 #inicio .contenedor-inicio {
   font-weight: bolder;
@@ -124,6 +138,18 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   background-color: rgba(245, 245, 245, 0.685);
   border-radius: 15% 20%/50% 10%;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #inicio .contenedor-inicio h1 {
+    width: 100%;
+    font-size: 1.9rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #inicio .contenedor-inicio h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
 #inicio .contenedor-inicio p {
   width: 90%;
   text-align: center;
@@ -132,47 +158,147 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   border-radius: 50% 30%/15% 20%;
   padding: 5px 10px;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #inicio .contenedor-inicio p {
+    margin-left: 50px;
+    width: 85%;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #inicio .contenedor-inicio p {
+    margin-left: 40px;
+    width: 85%;
+    font-size: 0.9rem;
+  }
+}
 
 #nosotros {
+  max-width: 100%;
   scroll-margin: 150px;
   height: 550px;
   padding-top: 10px;
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+@media only screen and (max-width: 450px) {
+  #nosotros {
+    display: inline;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #nosotros {
+    display: inline;
+    height: auto;
+    margin-bottom: 50px;
+  }
 }
 #nosotros .contenedor-nosotros1 {
   width: 50%;
   height: 400px;
   padding-left: 20px;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #nosotros .contenedor-nosotros1 {
+    width: 100%;
+    padding: 25px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #nosotros .contenedor-nosotros1 {
+    width: 100%;
+    padding: 15px;
+  }
+}
 #nosotros .contenedor-nosotros1 h2 {
   font-family: "popi";
   color: rgb(8, 84, 116);
   font-size: 2rem;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #nosotros .contenedor-nosotros1 h2 {
+    width: 100%;
+    padding-top: 25px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #nosotros .contenedor-nosotros1 h2 {
+    width: 100%;
+    padding-top: 25px;
+  }
+}
 #nosotros .contenedor-nosotros1 p {
   font-family: "popir";
   line-height: 50px;
 }
+@media only screen and (max-width: 450px) {
+  #nosotros .contenedor-nosotros1 p {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #nosotros .contenedor-nosotros1 p {
+    line-height: 40px;
+  }
+}
 #nosotros .contenedor-nosotros2 {
   width: 45%;
   text-align: center;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #nosotros .contenedor-nosotros2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #nosotros .contenedor-nosotros2 {
+    width: 100%;
+  }
 }
 #nosotros .contenedor-nosotros2 img {
   padding-top: 10px;
   width: 80%;
   height: 300px;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #nosotros .contenedor-nosotros2 img {
+    width: 80%;
+    height: auto;
+    padding-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #nosotros .contenedor-nosotros2 img {
+    width: 80%;
+    height: auto;
+    padding-bottom: 60px;
+    padding-top: 70px;
+  }
+}
 
 #quehacemos {
   background-image: url(../imagenes/fondos-imagenes/fondo1.jpg);
   background-size: cover;
   background-attachment: fixed;
+  max-width: 100%;
   height: 700px;
   padding: 50px;
   scroll-margin: 140px;
   text-align: center;
   color: white;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #quehacemos {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #quehacemos {
+    height: auto;
+  }
 }
 #quehacemos .quehacemos-box {
   background-color: rgba(128, 128, 128, 0.555);
@@ -185,6 +311,19 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   font-size: 2rem;
   text-align: center;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #quehacemos .quehacemos-box h2 {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #quehacemos .quehacemos-box h2 {
+    width: 100%;
+    font-size: 1.7;
+  }
+}
 #quehacemos .quehacemos-box p {
   margin-top: 30px;
   font-family: "popi";
@@ -194,6 +333,11 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 #quehacemos .quehacemos-box .quehacemos {
   margin-top: 70px;
   text-align: left;
+}
+@media only screen and (max-width: 450px) {
+  #quehacemos .quehacemos-box .quehacemos {
+    text-align: center;
+  }
 }
 #quehacemos .quehacemos-box .quehacemos h5 {
   font-family: "popi";
@@ -205,27 +349,78 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   font-size: 1.1rem;
   padding-bottom: 20px;
 }
-
 #proyectos {
+  max-width: 100%;
   height: 1100px;
   scroll-margin: 140px;
   padding: 20px;
   background-color: white;
   padding-bottom: 40px;
 }
+@media only screen and (min-width: 990px) {
+  #proyectos {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #proyectos {
+    text-align: center;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #proyectos {
+    text-align: center;
+    height: auto;
+  }
+}
 #proyectos h2 {
   color: rgb(8, 84, 116);
+  font-size: 2rem;
   font-family: "popi";
-  font-size: 1.6rem;
-  margin: 30px 30px;
+  margin: 50px;
+}
+#proyectos h3 {
+  color: orange;
+  font-family: "popi";
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 450px) {
+  #proyectos h3 {
+    margin-bottom: 30px;
+  }
 }
 #proyectos .proyectos {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #proyectos .proyectos {
+    display: inline;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #proyectos .proyectos {
+    display: inline;
+    text-align: center;
+  }
+}
 #proyectos .proyectos .proyecto-1 {
   width: 30%;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #proyectos .proyectos .proyecto-1 {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #proyectos .proyectos .proyecto-1 {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
 #proyectos .proyectos .proyecto-2 {
   width: 50%;
@@ -233,24 +428,81 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   font-size: 1.1;
   line-height: 40px;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #proyectos .proyectos .proyecto-2 {
+    width: 100%;
+    margin-top: 60px;
+    padding: 25px;
+    margin: 10px auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #proyectos .proyectos .proyecto-2 {
+    width: 100%;
+    margin-top: 60px;
+    padding: 20px;
+    margin: 10px auto;
+  }
+}
 #proyectos .proyecto-comunicate {
   margin: 40px;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #proyectos .proyecto-comunicate {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #proyectos .proyecto-comunicate {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px;
+  }
 }
 #proyectos .proyecto-comunicate h5 {
   margin-top: 30px;
   padding: 30px;
   font-family: "popi";
-  color: rgb(8, 84, 116);
+  color: orange;
+}
+@media only screen and (max-width: 450px) {
+  #proyectos .proyecto-comunicate h5 {
+    width: 100%;
+    padding: 10px;
+  }
 }
 #proyectos .proyecto-comunicate .proyecto-box {
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #proyectos .proyecto-comunicate .proyecto-box {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #proyectos .proyecto-comunicate .proyecto-box {
+    display: inline;
+  }
+}
 #proyectos .proyecto-comunicate .proyecto-box .numeracion {
   display: flex;
   justify-content: start;
   align-items: center;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #proyectos .proyecto-comunicate .proyecto-box .numeracion {
+    display: inline;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #proyectos .proyecto-comunicate .proyecto-box .numeracion {
+    display: inline;
+    text-align: center;
+  }
 }
 #proyectos .proyecto-comunicate .proyecto-box .numeracion img {
   padding-right: 30px;
@@ -262,8 +514,22 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 #proyectos .proyecto-comunicate .proyecto-box .proyecto-1 {
   width: 100%;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #proyectos .proyecto-comunicate .proyecto-box .proyecto-1 {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #proyectos .proyecto-comunicate .proyecto-box .proyecto-1 {
+    width: 80%;
+    margin: 5px;
+    margin: 10px auto;
+  }
+}
 
 #contacto {
+  max-width: 100%;
   scroll-margin: 140px;
   height: 600px;
   padding: 30px;
@@ -271,6 +537,23 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+@media only screen and (min-width: 990px) {
+  #contacto {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #contacto {
+    height: auto;
+    background-size: 990px 600px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #contacto {
+    height: auto;
+    background-size: 500 600px;
+  }
 }
 #contacto .contactanos {
   margin-top: 30px;
@@ -283,17 +566,6 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   text-align: left;
   background: rgba(0, 0, 0, 0.5);
 }
-@media only screen and (min-width: 451px) and (max-width: 990px) {
-  #contacto .contactanos {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 450px) {
-  #contacto .contactanos {
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-  }
-}
 #contacto .contacto {
   display: flex;
   background: rgba(0, 0, 0, 0.5);
@@ -304,11 +576,31 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   font-family: "popi";
   letter-spacing: 1px;
 }
+@media only screen and (max-width: 450px) {
+  #contacto .contacto {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #contacto .contacto {
+    display: inline;
+  }
+}
 #contacto .contacto .login-box {
   width: 60%;
   padding: 40px;
   margin-top: 4px;
   margin-right: 50px;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #contacto .contacto .login-box {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #contacto .contacto .login-box {
+    width: 90%;
+  }
 }
 #contacto .contacto .login-box .user-box {
   position: relative;
@@ -352,6 +644,16 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 #contacto .contacto .login-box .boton:hover {
   transform: scale(1.1);
   color: white;
+}
+@media only screen and (max-width: 450px) {
+  #contacto .contacto .login-box .boton {
+    padding: 5px 80px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #contacto .contacto .login-box .boton {
+    padding: 5px 100px;
+  }
 }
 #contacto .contacto .redes2 {
   background: rgba(155, 155, 155, 0.199);

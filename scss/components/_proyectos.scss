@@ -1,49 +1,133 @@
 #proyectos{
+    max-width: 100%; 
     height: 1100px;
     scroll-margin: 140px;
     padding: 20px;
     background-color: white;
     padding-bottom: 40px;
+    @include desktop{
+        height: auto;
+    }
+    @include tablet{
+        text-align: center;  
+        height: auto;                   
+    }   
+    @include mobile{
+        text-align: center;    
+        height: auto;                    
+    }         
     h2{
-       color: rgb(8, 84, 116);
-       font-family: 'popi';
-       font-size: 1.6rem;
-       margin: 30px 30px;
+        color: rgb(8, 84, 116);
+        font-size: 2rem;
+        font-family: 'popi';
+        margin: 50px;             
+    }
+    h3{
+        color: orange;
+        font-family: 'popi';
+        font-size: 1.3rem; 
+        @include  mobile{
+            margin-bottom: 30px;
+        }     
+            
     }
     .proyectos{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @include tablet{
+            display: inline;
+            text-align: center;                                    
+        }   
+        @include mobile{
+            display: inline; 
+            text-align: center;          
+        }         
         .proyecto-1{            
             width: 30%;
+            @include tablet{
+                width: 80%; 
+                margin: 10px auto;                 
+                              
+            }   
+            @include mobile{
+                width: 90%;                
+                margin: 10px auto;
+                                
+            }         
         }
         .proyecto-2{
             width: 50%;
             font-family: 'popir';
             font-size: 1.1;
             line-height: 40px;
+            @include tablet{
+                width: 100%;
+                margin-top: 60px;  
+                padding: 25px;
+                margin: 10px auto;                          
+                              
+            }   
+            @include mobile{
+                width: 100%;              
+                margin-top: 60px;  
+                padding: 20px; 
+                margin: 10px auto;               
+            }         
             
         }
     }
     .proyecto-comunicate{
         margin: 40px;
+        @include tablet{
+            width: 100%;                                     
+                          
+        }   
+        @include mobile{
+            width: 100%;              
+            font-size: 1rem;  
+            text-align: center;     
+            margin: 5px;        
+        }         
         
         h5{
             margin-top: 30px;
             padding: 30px;
             font-family: 'popi';
-            color: rgb(8, 84, 116);
+            color: orange; 
+          
+            @include mobile{
+                width: 100%;              
+                padding: 10px;          
+            }                   
             
         }
         .proyecto-box{ 
             align-items: center;           
             display: flex;
             justify-content: space-around;
+           
+            @include tablet{
+                display: inline;                                       
+                              
+            }   
+            @include mobile{
+                display: inline;               
+            }         
 
             .numeracion{
                 display: flex;                
                 justify-content: start; 
                 align-items: center;
+                @include tablet{
+                    display: inline;  
+                    text-align: center;                        
+                                  
+                }   
+                @include mobile{
+                    display: inline;
+                    text-align: center;               
+                }         
                 img{
                     padding-right: 30px;
                 }
@@ -55,6 +139,17 @@
             }
             .proyecto-1{            
                 width: 100%;
+                @include tablet{
+                    width: 80%;
+                    margin: 10px auto;
+                                             
+                                  
+                }   
+                @include mobile{
+                    width: 80%;              
+                    margin: 5px; 
+                    margin: 10px auto;              
+                }         
                 
             }
         }

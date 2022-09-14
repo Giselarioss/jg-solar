@@ -1,4 +1,5 @@
 #contacto{
+    max-width: 100%;
     scroll-margin: 140px; 
     height: 600px; 
     padding: 30px;   
@@ -6,6 +7,17 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    @include desktop{
+        height: auto;        
+    }
+    @include tablet{
+        height: auto; 
+        background-size: 990px 600px;                 
+    }   
+    @include mobile{
+        height: auto;  
+        background-size: 500 600px;             
+    }                   
     .contactanos{
         margin-top: 30px;
         margin-bottom: 0;
@@ -16,13 +28,7 @@
         color: orange;    
         text-align: left;        
         background: nth($bg, 4);
-        @include tablet{
-            font-size: 1.5rem;
-        } 
-        @include mobile{
-            font-size: 1.3rem;
-            letter-spacing: 2px;
-        }
+       
     } 
     .contacto{             
         display: flex;
@@ -32,12 +38,25 @@
         align-items: center;    
         margin-bottom: 100px;
         font-family: 'popi';   
-        letter-spacing: 1px;        
+        letter-spacing: 1px; 
+        @include mobile{
+            display: inline;
+        }       
+        @include tablet{
+            display: inline;
+        }
         .login-box { 
             width: 60%;                            
             padding: 40px;    
             margin-top: 4px; 
-            margin-right: 50px;   
+            margin-right: 50px; 
+            @include tablet{
+                width: 90%;
+            }       
+            @include mobile{
+                width: 90%;
+            }
+              
             .user-box {
                 position: relative;
             }
@@ -81,7 +100,13 @@
                 &:hover{
                     transform: scale(1.1);
                     color: white;
-                }         
+                } 
+                @include mobile{
+                    padding: 5px 80px;
+                } 
+                @include tablet{
+                    padding: 5px 100px;
+                }          
             
             }
         } 
@@ -110,6 +135,12 @@
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
                 padding: 5px 80px 5px 10px;
                 border-radius: 10px;  
+                @include tablet{
+                    
+                }       
+                @include mobile{
+                   
+                }
                 &:hover{
                     transform: scale(1.1);
                     color: white;
