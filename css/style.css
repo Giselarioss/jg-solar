@@ -579,12 +579,14 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 }
 @media only screen and (max-width: 450px) {
   #contacto .contacto {
-    display: inline;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 451px) and (max-width: 990px) {
   #contacto .contacto {
-    display: inline;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
   }
 }
 #contacto .contacto .login-box {

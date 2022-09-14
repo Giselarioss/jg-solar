@@ -40,10 +40,13 @@
         font-family: 'popi';   
         letter-spacing: 1px; 
         @include mobile{
-            display: inline;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+                        
         }       
         @include tablet{
-            display: inline;
+            flex-wrap: wrap;
+            padding-bottom: 50px;           
         }
         .login-box { 
             width: 60%;                            
@@ -54,6 +57,7 @@
                 width: 90%;
                 margin: 20px auto;
                 text-align: center;
+                  
             }       
             @include mobile{
                 width: 90%;
