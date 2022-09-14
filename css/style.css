@@ -169,13 +169,11 @@ header .contenedor-menu .nav-menu .nav-letter .icono-mobile {
 }
 @media only screen and (min-width: 451px) and (max-width: 990px) {
   #inicio {
-    background-image: url(../imagenes/fondos-imagenes/fondo-tablet.jpg);
     background-size: 990px 700px;
   }
 }
 @media only screen and (max-width: 450px) {
   #inicio {
-    background-image: url(../imagenes/fondos-imagenes/fondo-mobile.jpg);
     background-size: 700px 700px;
   }
 }
