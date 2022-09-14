@@ -595,11 +595,15 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
 @media only screen and (min-width: 451px) and (max-width: 990px) {
   #contacto .contacto .login-box {
     width: 90%;
+    margin: 20px auto;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 450px) {
   #contacto .contacto .login-box {
     width: 90%;
+    margin: 20px auto;
+    text-align: center;
   }
 }
 #contacto .contacto .login-box .user-box {
@@ -665,6 +669,20 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #contacto .contacto .redes2 {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #contacto .contacto .redes2 {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+  }
+}
 #contacto .contacto .redes2 .sociales {
   display: flex;
   align-items: center;
@@ -681,6 +699,18 @@ header .contenedor-menu .nav-menu .nav-letter:hover {
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 5px 80px 5px 10px;
   border-radius: 10px;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  #contacto .contacto .redes2 .sociales {
+    width: 50%;
+    margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #contacto .contacto .redes2 .sociales {
+    width: 50%;
+    margin: 20px auto;
+  }
 }
 #contacto .contacto .redes2 .sociales:hover {
   transform: scale(1.1);
