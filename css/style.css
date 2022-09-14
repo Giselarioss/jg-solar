@@ -80,11 +80,50 @@ header .contenedor-menu {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  header .contenedor-menu {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bolder;
+    max-height: 100%;
+    background-color: white;
+    position: fixed;
+    width: 40%;
+    right: 0;
+    top: 140px;
+    overflow-y: scroll;
+    transition: all 0.4s ease;
+    position: fixed;
+  }
+  header .contenedor-menu a {
+    border-bottom: 1px solid orange;
+    padding: 20px;
+  }
+  header .contenedor-menu a img {
+    padding: 10px 5px;
+  }
+}
 @media only screen and (max-width: 450px) {
   header .contenedor-menu {
-    justify-content: start;
-    padding: 0;
-    margin: 0;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bolder;
+    max-height: 100%;
+    background-color: white;
+    position: fixed;
+    width: 50%;
+    right: 0;
+    top: 140px;
+    overflow-y: scroll;
+    transition: all 0.4s ease;
+    position: fixed;
+  }
+  header .contenedor-menu a {
+    border-bottom: 1px solid orange;
+    padding: 20px;
+  }
+  header .contenedor-menu a img {
+    padding: 10px 5px;
   }
 }
 header .contenedor-menu .nav-menu .nav-letter {
@@ -97,6 +136,19 @@ header .contenedor-menu .nav-menu .nav-letter {
 header .contenedor-menu .nav-menu .nav-letter:hover {
   transform: scale(1.1);
   color: black;
+}
+header .contenedor-menu .nav-menu .nav-letter .icono-mobile {
+  display: none;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  header .contenedor-menu .nav-menu .nav-letter .icono-mobile {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 450px) {
+  header .contenedor-menu .nav-menu .nav-letter .icono-mobile {
+    display: inline;
+  }
 }
 @media only screen and (max-width: 450px) {
   header .logo {
