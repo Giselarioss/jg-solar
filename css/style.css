@@ -96,13 +96,14 @@ header .contenedor-menu {
     transition: all 0.4s ease;
     position: fixed;
     border: 1px solid orange;
+    justify-content: right;
   }
   header .contenedor-menu a {
     border-bottom: 1px solid orange;
     padding: 1px 20px;
   }
   header .contenedor-menu a img {
-    padding: 10px 40px;
+    padding: 10px 50px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -113,20 +114,21 @@ header .contenedor-menu {
     max-height: 100%;
     background-color: white;
     position: fixed;
-    width: 70%;
+    width: 60%;
     right: 0;
     top: 140px;
     overflow-y: scroll;
     transition: all 0.4s ease;
     position: fixed;
     border: 1px solid orange;
+    justify-content: right;
   }
   header .contenedor-menu a {
     border-bottom: 1px solid orange;
     padding: 2px 20px;
   }
   header .contenedor-menu a img {
-    padding: 5px 30px;
+    padding: 5px 40px;
   }
 }
 header .contenedor-menu .nav-menu .nav-letter {
@@ -143,7 +145,7 @@ header .contenedor-menu .nav-menu .nav-letter {
 }
 @media only screen and (max-width: 450px) {
   header .contenedor-menu .nav-menu .nav-letter {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 header .contenedor-menu .nav-menu .nav-letter:hover {
