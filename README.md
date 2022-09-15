@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://jg-solar.vercel.app/">
-    <img src="logos/logo1.png" alt="Logo" width="200" height="100">
+    <img src="imagenes/logos/logo1.png" alt="Logo" width="200" height="80">
   </a>
 
   <h3 align="center">JG Solar</h3>
