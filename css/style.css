@@ -102,7 +102,7 @@ header .contenedor-menu {
     padding: 1px 20px;
   }
   header .contenedor-menu a img {
-    padding: 15px 40px;
+    padding: 10px 40px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -123,10 +123,10 @@ header .contenedor-menu {
   }
   header .contenedor-menu a {
     border-bottom: 1px solid orange;
-    padding: 3px 20px;
+    padding: 2px 20px;
   }
   header .contenedor-menu a img {
-    padding: 15px 30px;
+    padding: 5px 30px;
   }
 }
 header .contenedor-menu .nav-menu .nav-letter {
@@ -135,6 +135,16 @@ header .contenedor-menu .nav-menu .nav-letter {
   font-weight: bolder;
   font-size: 1rem;
   text-shadow: 1px 5px 5px 4px black;
+}
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+  header .contenedor-menu .nav-menu .nav-letter {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  header .contenedor-menu .nav-menu .nav-letter {
+    font-size: 0.6rem;
+  }
 }
 header .contenedor-menu .nav-menu .nav-letter:hover {
   transform: scale(1.1);

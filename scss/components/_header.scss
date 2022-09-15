@@ -35,14 +35,14 @@ header{
             overflow-y: scroll;
             transition: all .4s ease;
             position: fixed;
-            border: 1px solid orange;
+            border: 1px solid orange;           
             
             a{
                 border-bottom: 1px solid orange;
-                padding: 1px 20px;
+                padding: 1px 20px;               
                 
                 img{
-                    padding: 15px 40px ;
+                    padding: 10px 40px ;
                 }
                 
             }
@@ -63,9 +63,9 @@ header{
             border: 1px solid orange;
             a{
                 border-bottom: 1px solid orange;
-                padding: 3px 20px;
+                padding: 2px 20px;
                 img{
-                    padding: 15px 30px ;
+                    padding: 5px 30px ;
                 }
             }
         }
@@ -75,7 +75,13 @@ header{
             font-family: 'popir';
             font-weight: bolder;
             font-size: 1rem;
-            text-shadow: 1px 5px 5px 4px black;    
+            text-shadow: 1px 5px 5px 4px black; 
+            @include tablet{
+                font-size: 0.7rem;
+            }
+            @include mobile{
+                font-size: 0.6rem; 
+            }    
             &:hover {
                 transform: scale(1.1);
                 color: black;
