@@ -89,30 +89,6 @@ header .contenedor-menu {
     max-height: 100%;
     background-color: white;
     position: fixed;
-    width: 40%;
-    right: 0;
-    top: 140px;
-    overflow-y: scroll;
-    transition: all 0.4s ease;
-    position: fixed;
-    border: 1px solid orange;
-  }
-  header .contenedor-menu a {
-    border-bottom: 1px solid orange;
-    padding: 3px 20px;
-  }
-  header .contenedor-menu a img {
-    padding: 10px 5px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  header .contenedor-menu {
-    text-align: right;
-    font-size: 1rem;
-    font-weight: bolder;
-    max-height: 100%;
-    background-color: white;
-    position: fixed;
     width: 50%;
     right: 0;
     top: 140px;
@@ -123,10 +99,34 @@ header .contenedor-menu {
   }
   header .contenedor-menu a {
     border-bottom: 1px solid orange;
+    padding: 1px 20px;
+  }
+  header .contenedor-menu a img {
+    padding: 15px 40px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  header .contenedor-menu {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bolder;
+    max-height: 100%;
+    background-color: white;
+    position: fixed;
+    width: 70%;
+    right: 0;
+    top: 140px;
+    overflow-y: scroll;
+    transition: all 0.4s ease;
+    position: fixed;
+    border: 1px solid orange;
+  }
+  header .contenedor-menu a {
+    border-bottom: 1px solid orange;
     padding: 3px 20px;
   }
   header .contenedor-menu a img {
-    padding: 10px 5px;
+    padding: 15px 30px;
   }
 }
 header .contenedor-menu .nav-menu .nav-letter {
@@ -431,7 +431,7 @@ header .contenedor-menu .nav-menu .nav-letter .icono-mobile {
   color: rgb(8, 84, 116);
   font-size: 2rem;
   font-family: "popi";
-  margin: 50px;
+  margin: 30px;
 }
 #proyectos h3 {
   color: orange;
